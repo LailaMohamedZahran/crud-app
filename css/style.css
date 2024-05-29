@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #fec260;
+}
+body {
+  background-color: #f7ecde;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.overlay {
+  position: fixed;
+  background-color: #dddddd7e;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+section {
+  padding: 55px 0;
+}
+section h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  position: relative;
+}
+section h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #fec260;
+  transition: 0.3s linear;
+  z-index: -1;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+section h1:hover::before {
+  height: 40px;
+}
+.content-bookmark {
+  border-width: 2px 0 2px 0px;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.content-bookmark h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.content-bookmark h2 svg:first-child {
+  color: #3ca55c;
+}
+.content-bookmark h2 svg:nth-child(2) {
+  color: #b5ac49;
+}
+.subBtn {
+  background-color: #d1512d !important;
+  font-size: 18px !important;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.subBtn:hover {
+  background-color: #a03315 !important;
+  letter-spacing: 1px;
+}
+.ubdateBtn {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  font-size: 18px !important;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.ubdateBtn:hover {
+  background-color: #ecb307;
+  border-color: #ecb307;
+  letter-spacing: 1px;
+}
+.spacing {
+  transition: 0.3s linear;
+}
+.spacing:hover {
+  letter-spacing: 1px;
+}
+
+.alertError {
+  width: 35%;
+  padding: 50px 20px 20px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 999;
+  display: none;
+}
+.cloors {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color {
+  display: flex;
+}
+.alertError span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 8px;
+}
+.cloors svg {
+  font-size: 25px;
+  cursor: pointer;
+}
+.alertError span:first-child {
+  background-color: #f15f5d;
+}
+.alertError span:nth-child(2) {
+  background-color: #febe2e;
+}
+.alertError span:nth-child(3) {
+  background-color: #4db748;
+}
+.txtsalert p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.txtsalert p:nth-child(2),
+.txtsalert p:nth-child(3),
+.txtsalert p:nth-child(4) {
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+}
+.txtsalert p svg {
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  color: #a03315;
+  border: 2px solid #a03315;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 4px 7px;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+}
+
+/*media*/
+@media (max-width: 428px) {
+  .alertError {
+    width: 95%;
+  }
+  .content-bookmark h2 {
+    font-size: 23px;
+  }
+  tr td button.btn {
+    font-size: 11px;
+  }
+}
+
+.btncolor {
+  background-color: #b5ac49;
+}
